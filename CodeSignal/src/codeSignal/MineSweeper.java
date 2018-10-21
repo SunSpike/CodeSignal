@@ -11,10 +11,72 @@ public class MineSweeper {
 		
 		for ( int i = 0; i < result.length; i++ ){
 			for ( int j = 0; j < result[i].length; j++ ){
-				System.out.println(result[i][j]);
+				try{
+					if ( matrix[i-1][j-1] == true )
+						count++;
+				}catch(IndexOutOfBoundsException e){
+					e.printStackTrace();
+				}
+				
+				try{
+					if ( matrix[i-1][j] == true )
+						count++;
+				}catch(IndexOutOfBoundsException e){
+					e.printStackTrace();
+				}
+				
+				try{
+					if ( matrix[i-1][j+1] == true )
+						count++;
+				}catch(IndexOutOfBoundsException e){
+					e.printStackTrace();
+				}
+				
+				try{
+					if ( matrix[i][j-1] == true )
+						count++;
+				}catch(IndexOutOfBoundsException e){
+					e.printStackTrace();
+				}
+				
+				try{
+					if ( matrix[i][j+1] == true )
+						count++;
+				}catch(IndexOutOfBoundsException e){
+					e.printStackTrace();
+				}
+				
+				try{
+					if ( matrix[i+1][j-1] == true )
+						count++;
+				}catch(IndexOutOfBoundsException e){
+					e.printStackTrace();
+				}
+				
+				try{
+					if ( matrix[i+1][j] == true )
+						count++;
+				}catch(IndexOutOfBoundsException e){
+					e.printStackTrace();
+				}
+				
+				try{
+					if ( matrix[i+1][j+1] == true )
+						count++;
+				}catch(IndexOutOfBoundsException e){
+					e.printStackTrace();
+				}
+				
+				result[i][j] = count;
+				count = 0;
 			}
 		}
 		
-		System.out.println("github testing now..");
+		for ( int i = 0; i < result.length; i++ ){
+			for ( int j = 0; j < result[i].length; j++ ){
+				System.out.print(result[i][j] + " ");
+			}
+			System.out.println();
+		}
 	}
 }
