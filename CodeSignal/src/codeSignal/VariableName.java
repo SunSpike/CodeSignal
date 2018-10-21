@@ -13,5 +13,7 @@ public class VariableName {
 		
 		pattern = Pattern.compile(regex);
 		matcher = pattern.matcher(name);
+		
+		System.out.println(matcher.matches());
 	}
 }
