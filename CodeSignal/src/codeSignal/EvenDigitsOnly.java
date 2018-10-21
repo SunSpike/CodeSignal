@@ -9,6 +9,7 @@ public class EvenDigitsOnly {
 			if ( Integer.parseInt(temp.charAt(i) + "") % 2 != 0 )
 				System.out.println("false");
 		}
+		
 		System.out.println("true");
 	}
 }
