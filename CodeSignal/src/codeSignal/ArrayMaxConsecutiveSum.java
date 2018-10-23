@@ -3,7 +3,7 @@ package codeSignal;
 public class ArrayMaxConsecutiveSum {
 	public static void main(String[] args){
 		int[] inputArray = {2, 3, 5, 1, 6};
-		int k = 3;
+		int k = 2;
 		int max = 0;
 		int temp = 0;
 		
