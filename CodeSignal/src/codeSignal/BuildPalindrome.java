@@ -24,7 +24,7 @@ public class BuildPalindrome {
 	    st = st + reverse.substring(endIndex, reverse.length());
 
 	    System.out.println(st);
-	    //have to check max value of abs(startIndex - maxIndex)
+	    //have to check max value of abs(startIndex - maxIndex)	    
 	}	
 	
 	static String reverse(String st){
