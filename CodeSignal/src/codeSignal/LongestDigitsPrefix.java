@@ -5,12 +5,11 @@ public class LongestDigitsPrefix {
 		String inputString = "0123456789";
 		String temp = "empty";
 		
-		int number;
 		int i = 0;
 		
 		try{
 			while ( inputString.charAt(i) != ' '){
-				number = Integer.parseInt(inputString.charAt(i) + "");
+				Integer.parseInt(inputString.charAt(i) + "");
 				i++;		
 			}
 		}catch(NumberFormatException e){
