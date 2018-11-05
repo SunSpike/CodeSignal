@@ -4,9 +4,6 @@ public class AlmostIncreasingSequence {
 	public static void main(String[] args){
 		int[] sequence = {1, 3, 2, 1};
 		
-		int count = 0;
-		int tempValue = Integer.MIN_VALUE;
-		
 		for ( int i = 0; i < sequence.length - 2; i++ ){
 			if(sequence[i] >= sequence[i+1]){
 				System.out.println(sequence[i]);
@@ -29,6 +26,7 @@ public class AlmostIncreasingSequence {
 		
 		System.out.println("possible");
 	}
+	
 	static boolean isSort(int[] array){
 		for (int i = 0; i < array.length - 2; i++) {
 	        if (array[i] >= array[i + 1]) {
