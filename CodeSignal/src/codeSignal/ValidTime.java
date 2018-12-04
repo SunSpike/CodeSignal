@@ -2,8 +2,8 @@ package codeSignal;
 
 public class ValidTime {
 	public static void main(String[] args){
-		String text = "24:00";
-		String[] array = text.split(":");
+		String time = "24:00";
+		String[] array = time.split(":");
 		
 		int hour = Integer.parseInt(array[0]);
 		int minute = Integer.parseInt(array[1]);
