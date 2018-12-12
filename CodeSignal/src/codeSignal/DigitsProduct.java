@@ -20,7 +20,6 @@ public class DigitsProduct {
 					break;
 				}
 				if ( product % i == 0 ){
-					System.out.println(i);
 					result = result + i;
 					product = product / i;
 					break;
